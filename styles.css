@@ -19,10 +19,8 @@ body {
 }
 
 /* header & nav */
-
 header {
     background-color: rgba(10,15,47,0.85);
-    /* backdrop-filter: blur(4px); */
     padding: 20px 40px;
 }
 
@@ -84,7 +82,7 @@ nav a:hover {
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: url("images/melo-red-water.jpg"); /* <<< replace with your image */
+    background-image: url("images/melo-red-water.jpg");
     background-size: cover;
     background-position: center;
     opacity: 1;
@@ -153,12 +151,12 @@ nav a:hover {
     padding: 40px 20px;
     border-radius: var(--border-radius);
     border: 1px solid var(--secondary);
-    background-color: var(--primary); /* you can still add a background image if you want */
+    background-color: var(--primary);
 }
 
 .about-section {
     padding: 60px 20px;
-    background: none; /* removes the dark box */
+    background: none;
     color: var(--text);
 }
 
@@ -178,7 +176,7 @@ nav a:hover {
 .about-image img {
     width: 100%;
     border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* subtle shadow to lift image */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
 .about-text {
@@ -192,7 +190,7 @@ nav a:hover {
     font-size: 2rem;
     font-family: var(--header-font);
     font-weight: 300;
-    text-align: left; /* aligns nicely with text next to image */
+    text-align: left;
 }
 
 .about-text p {
