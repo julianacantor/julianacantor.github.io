@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Aesthetic - Melodrama Lounge</title>
+  <meta name="description" content="Visual art direction, color palettes, and photos inspired by Melodrama.">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* gallery */
+    .gallery {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .gallery h2 {
+      text-align: center;
+      color: var(--accent);
+      font-family: var(--header-font);
+      font-weight: 300;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+    }
+
+    /* grid */
+    .image-grid {
+      column-count: 3;
+      column-gap: 20px;
+    }
+
+    .image-grid img {
+      width: 100%;
+      margin-bottom: 20px;
+      border-radius: var(--border-radius);
+      display: block;
+      object-fit: cover;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .image-grid img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    @media (max-width: 992px) {
+      .image-grid {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .image-grid {
+        column-count: 1;
+      }
+    }
+
+    header, footer {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="site-title">Melodrama Lounge</h1>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tracklist.html">Tracklist</a></li>
+        <li><a href="visuals.html" aria-current="page">Visuals</a></li>
+        <li><a href="cultural.html">Impact</a></li>
+        <li><a href="fan.html">Fan Corner</a></li>
+        <li><a href="index.html#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="gallery">
+      <h2>Album Art & Visuals</h2>
+      <div class="image-grid">
+        <img src="images/melo-discoball.jpg" alt="Melodrama disco neon aesthetic">
+        <img src="images/melo-balloons.jpg" alt="Melodrama party vibe">
+        <img src="images/melo-purple-pool.jpg" alt="Melodrama purple pool aesthetic">
+        <img src="images/melo-lorde-performing.jpg" alt="Melodrama live performance">
+        <img src="images/melo-lorde-closeup.jpg" alt="Melodrama live performance close-up">
+        <img src="images/melo-greenlight.jpg" alt="Green Light music video still">
+        <img src="images/melo-mv.jpg" alt="Melodrama music video aesthetic">
+        <img src="images/lorde-brushing.jpg" alt="Lorde brushing teeth scene">
+        <img src="images/lorde-blurry-vert.jpg" alt="Melodrama blurry aesthetic">
+        <img src="images/melo-greenlight-closeup.jpg" alt="Green Light close-up">
+        <img src="images/melo-alt-cover.jpg" alt="Melodrama alternative cover art">
+        <img src="images/melo-blue-vibe.jpg" alt="Melodrama blue aesthetic">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Melodrama Lounge</p>
+  </footer>
+</body>
+</html>

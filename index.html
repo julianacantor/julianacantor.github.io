@@ -1,47 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Melodrama Lounge</title>
-  <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="A fan-made digital space celebrating Lorde’s Melodrama through visuals, themes, and creative exploration." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melodrama Lounge - Home</title>
+  <meta name="description" content="A fan-made immersive digital space celebrating Lorde’s Melodrama through visuals, themes, and creative exploration.">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
+<script>
+  window.addEventListener("scroll", () => {
+      const hero = document.querySelector(".hero");
+      if (window.scrollY > 50) {
+          hero.classList.add("shrink");
+      } else {
+          hero.classList.remove("shrink");
+      }
+  });
+</script>
 
 <body>
   <header>
-    <h1 class="site-title">Melodrama Lounge</h1>
-
-    <nav>
-      <ul class="nav-list">
-        <li><a href="#" aria-current="page">Home</a></li>
-        <li><a href="#">About the Album</a></li>
-        <li><a href="#">Tracklist</a></li>
-        <li><a href="#">Visual Aesthetic</a></li>
-        <li><a href="#">Cultural Impact</a></li>
-        <li><a href="#">Fan Corner</a></li>
-      </ul>
-    </nav>
+    <div class="header-container">
+      <h1 class="site-title">Melodrama Lounge</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="tracklist.html">Tracklist</a></li>
+          <li><a href="visuals.html">Visuals</a></li>
+          <li><a href="cultural.html">Impact</a></li>
+          <li><a href="fan.html">Fan Corner</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="hero">
-      <h2>Step into the world of Melodrama</h2>
-      <p>A fan-made digital space celebrating the sound, visuals, and cultural impact of Lorde’s iconic album <em>Melodrama</em>.</p>
+    <section id="hero" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Welcome to Melodrama Lounge</h1>
+        <p class="hero-sub">Step inside the world of Lorde's defining sophomore record</p>
+      </div>
     </section>
 
-    <section class="intro">
-      <h3>Welcome</h3>
-      <p>
-        Melodrama Lounge is an immersive project designed to explore the emotional universe of Lorde’s sophomore album.
-        For now, this page serves as the beginning of the full experience I will complete for my final project.
-        More content will be added in the upcoming weeks.
-      </p>
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="images/melo-cover-orignal.jpg" alt="Melodrama Album Cover">
+        </div>
+        <div class="about-text">
+          <h3>About Melodrama Lounge</h3>
+          <p>
+            Melodrama Lounge is a digital space dedicated to exploring the emotional, visual, and cultural universe of Lorde’s <em>Melodrama</em>. This site brings together the album’s themes of heartbreak, solitude, youth, and transformation, translating them into interactive sections that highlight the music, visuals, and impact behind the record. The goal is to create a space that captures the same intimate, cinematic energy the album is known for—where visitors can dive deeper into the storytelling, aesthetics, and legacy of one of the most influential pop albums of the 2010s.
+          </p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Melodrama Lounge — Created for CIS 300</p>
+    <p>&copy; 2025 Melodrama Lounge</p>
   </footer>
 </body>
 </html>
